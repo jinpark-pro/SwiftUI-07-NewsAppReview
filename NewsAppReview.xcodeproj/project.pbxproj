@@ -19,6 +19,7 @@
 		3C65B5442C275BC700344D6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3C65B5462C275BC800344D6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C65B5492C275BC800344D6E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3C65B5502C275F9600344D6E /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +54,7 @@
 			children = (
 				3C65B5422C275BC700344D6E /* NewsAppReviewApp.swift */,
 				3C65B5442C275BC700344D6E /* ContentView.swift */,
+				3C65B5502C275F9600344D6E /* Config.xcconfig */,
 				3C65B5462C275BC800344D6E /* Assets.xcassets */,
 				3C65B5482C275BC800344D6E /* Preview Content */,
 			);
