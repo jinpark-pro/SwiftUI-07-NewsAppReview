@@ -7,15 +7,20 @@
 
 import Foundation
 
-struct NewsItem: Codable {
+struct NewsItem: Codable, Identifiable {
+    let id = UUID()
     // from Naver API response
-    var title: String
-    var originallink: String
-    var link: String
-    var description: String
-    var pubDate: String
+    let title: String
+    let originallink: String
+    let link: String
+    let description: String
+    let pubDate: String
+    
+    enum CodingKeys: String, CodingKey {
+        case title, originallink, link, description, pubDate
+    }
 }
 
 struct NewsResponse: Codable {
-    var items: [NewsItem]
+    let items: [NewsItem]
 }

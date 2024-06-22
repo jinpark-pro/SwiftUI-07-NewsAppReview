@@ -8,17 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var viewModel = NewsViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List(viewModel.newsItems) { item in
+                Text(item.title)
+                    .font(.headline)
+                Text(item.pubDate)
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+            .navigationTitle("News (total: \(viewModel.newsItems.count))")
+            .searchable(text: $viewModel.searchQuery, prompt: "Search news")
         }
-        .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    NavigationStack {
+        ContentView()
+    }
 }
