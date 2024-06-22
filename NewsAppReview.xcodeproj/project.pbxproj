@@ -12,6 +12,7 @@
 		3C65B5472C275BC800344D6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C65B5462C275BC800344D6E /* Assets.xcassets */; };
 		3C65B54A2C275BC800344D6E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C65B5492C275BC800344D6E /* Preview Assets.xcassets */; };
 		3C65B5532C27665E00344D6E /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65B5522C27665E00344D6E /* NewsItem.swift */; };
+		3C65B5552C27683B00344D6E /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65B5542C27683B00344D6E /* NewsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		3C65B5502C275F9600344D6E /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		3C65B5512C27644600344D6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3C65B5522C27665E00344D6E /* NewsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
+		3C65B5542C27683B00344D6E /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				3C65B5422C275BC700344D6E /* NewsAppReviewApp.swift */,
 				3C65B5442C275BC700344D6E /* ContentView.swift */,
 				3C65B5522C27665E00344D6E /* NewsItem.swift */,
+				3C65B5542C27683B00344D6E /* NewsService.swift */,
 				3C65B5502C275F9600344D6E /* Config.xcconfig */,
 				3C65B5462C275BC800344D6E /* Assets.xcassets */,
 				3C65B5482C275BC800344D6E /* Preview Content */,
@@ -146,6 +149,7 @@
 			files = (
 				3C65B5452C275BC700344D6E /* ContentView.swift in Sources */,
 				3C65B5532C27665E00344D6E /* NewsItem.swift in Sources */,
+				3C65B5552C27683B00344D6E /* NewsService.swift in Sources */,
 				3C65B5432C275BC700344D6E /* NewsAppReviewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
