@@ -7,7 +7,7 @@
 - 필수 요구사항
   1. 프로젝트 설정 및 API 키 준비
      - Xcode에서 새로운 SwiftUI 프로젝트를 생성한다.
-     - 네이버 개발자 센터(https://developers.naver.com/)에서 애플리케이션을 등록하고 Client ID와 Client Secret을 발급받는다.
+     - [네이버 개발자 센터](https://developers.naver.com/)에서 애플리케이션을 등록하고 Client ID와 Client Secret을 발급받는다.
   2. 모델 생성
      - 뉴스 기사를 표현할 모델을 생성한다.
      - 모델은 NewsItem과 NewsResponse 구조체를 포함하며, Codable 프로토콜을 준수한다.
