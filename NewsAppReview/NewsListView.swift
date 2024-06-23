@@ -7,20 +7,24 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct NewsListView: View {
     @StateObject var viewModel = NewsViewModel()
     
     var body: some View {
         NavigationStack {
             List(viewModel.newsItems) { item in
-                Text(item.title)
-                    .font(.headline)
-                Text(item.pubDate)
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
+                NavigationLink(destination: NewsDetailView(item: item)) {
+                    VStack(alignment: .leading) {
+                        Text(item.title)
+                            .font(.headline)
+                        Text(item.pubDate)
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
+                }
             }
             .listStyle(PlainListStyle())
-            .navigationTitle("News (total: \(viewModel.newsItems.count))")
+            .navigationTitle("News Search")
             .navigationBarTitleDisplayMode(.inline)
             .searchable(text: $viewModel.searchQuery, prompt: "Search news")
             .overlay(
@@ -37,5 +41,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    NewsListView()
 }
