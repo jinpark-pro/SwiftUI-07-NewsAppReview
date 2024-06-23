@@ -19,14 +19,23 @@ struct ContentView: View {
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }
+            .listStyle(PlainListStyle())
             .navigationTitle("News (total: \(viewModel.newsItems.count))")
+            .navigationBarTitleDisplayMode(.inline)
             .searchable(text: $viewModel.searchQuery, prompt: "Search news")
+            .overlay(
+                Group {
+                    if let errorMessage = viewModel.errorMessage {
+                        Text(errorMessage)
+                            .foregroundStyle(.red)
+                            .padding()
+                    }
+                }
+            )
         }
     }
 }
 
 #Preview {
-    NavigationStack {
-        ContentView()
-    }
+    ContentView()
 }

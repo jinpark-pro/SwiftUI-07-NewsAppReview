@@ -29,11 +29,21 @@ class NewsViewModel: ObservableObject {
     }
     
     init() {
-        searchNews()
+        let result = searchNews()
+        result
             .catch { _ in Empty() }
-            .sink { [weak self] response in
-                self?.newsItems = response.items
+            .map(\.items)
+            .assign(to: \.newsItems, on: self)
+            .store(in: &cancellables)
+        
+        // for print error message
+        result
+            .map { _ in nil as String? }
+            .catch { error -> AnyPublisher<String?, Never> in
+                Just(error.localizedDescription).eraseToAnyPublisher()
             }
+            .print("error")
+            .assign(to: \.errorMessage, on: self)
             .store(in: &cancellables)
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C251CDA2C282078007CFECD /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C251CD92C282078007CFECD /* APIError.swift */; };
 		3C65B5432C275BC700344D6E /* NewsAppReviewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65B5422C275BC700344D6E /* NewsAppReviewApp.swift */; };
 		3C65B5452C275BC700344D6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65B5442C275BC700344D6E /* ContentView.swift */; };
 		3C65B5472C275BC800344D6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C65B5462C275BC800344D6E /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C251CD92C282078007CFECD /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		3C65B53F2C275BC700344D6E /* NewsAppReview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsAppReview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C65B5422C275BC700344D6E /* NewsAppReviewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAppReviewApp.swift; sourceTree = "<group>"; };
 		3C65B5442C275BC700344D6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				3C65B5542C27683B00344D6E /* NewsService.swift */,
 				3C65B5562C27704900344D6E /* NewsViewModel.swift */,
 				3C65B5442C275BC700344D6E /* ContentView.swift */,
+				3C251CD92C282078007CFECD /* APIError.swift */,
 				3C65B5502C275F9600344D6E /* Config.xcconfig */,
 				3C65B5462C275BC800344D6E /* Assets.xcassets */,
 				3C65B5482C275BC800344D6E /* Preview Content */,
@@ -155,6 +158,7 @@
 				3C65B5572C27704900344D6E /* NewsViewModel.swift in Sources */,
 				3C65B5552C27683B00344D6E /* NewsService.swift in Sources */,
 				3C65B5432C275BC700344D6E /* NewsAppReviewApp.swift in Sources */,
+				3C251CDA2C282078007CFECD /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
